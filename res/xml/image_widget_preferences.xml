@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Paramètres du widget">
+
+	<PreferenceCategory
+		android:key="widget_image_preferences_category_settings"
+		android:title="Paramètres"
+	>
+		<ListPreference  
+			android:title="Fréquence de mise à jour"
+			android:summary="Sélectionnez la fréquence de mise à jour."
+			android:entries="@array/widgetListOptionsTimeLabels"
+			android:entryValues="@array/widgetListOptionsTimeValues"
+			android:negativeButtonText="Annuler"
+			android:key="widget_time"
+			android:defaultValue="60"
+			>
+		</ListPreference>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
